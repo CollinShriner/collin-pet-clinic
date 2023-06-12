@@ -14,7 +14,7 @@
 	<name>collin-pet-clinic</name>
 	<description>This is a practice project creating the classic Pet Clinic using Spring</description>
 	<properties>
-		<java.version>20</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
