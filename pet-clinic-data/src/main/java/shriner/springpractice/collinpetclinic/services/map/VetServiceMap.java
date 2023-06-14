@@ -1,10 +1,12 @@
 package shriner.springpractice.collinpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import shriner.springpractice.collinpetclinic.model.Vet;
 import shriner.springpractice.collinpetclinic.services.VetService;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
