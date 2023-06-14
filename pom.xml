@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>shriner.springpractice</groupId>
 	<artifactId>collin-pet-clinic</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>collin-pet-clinic</name>
 	<description>This is a practice project creating the classic Pet Clinic using Spring</description>
@@ -26,7 +26,7 @@
 		<developerConnection>
 			scm:git:git@github.com:CollinShriner/collin-pet-clinic.git
 		</developerConnection>
-	  <tag>collin-pet-clinic-0.0.1</tag>
+	  <tag>HEAD</tag>
   </scm>
 	<build>
 		<plugins>

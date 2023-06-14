@@ -3,7 +3,7 @@
     <parent>
         <groupId>shriner.springpractice</groupId>
         <artifactId>collin-pet-clinic</artifactId>
-        <version>0.0.1</version>
+        <version>0.0.2-SNAPSHOT</version>
     </parent>
     <artifactId>pet-clinic-web</artifactId>
     <name>Archetype - pet-clinic-web</name>
@@ -13,7 +13,7 @@
         <dependency>
             <groupId>shriner.springpractice</groupId>
             <artifactId>pet-clinic-data</artifactId>
-            <version>0.0.1</version>
+            <version>0.0.2-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
