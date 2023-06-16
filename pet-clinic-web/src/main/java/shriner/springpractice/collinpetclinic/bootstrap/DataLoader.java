@@ -3,26 +3,36 @@ package shriner.springpractice.collinpetclinic.bootstrap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import shriner.springpractice.collinpetclinic.model.Owner;
+import shriner.springpractice.collinpetclinic.model.PetType;
 import shriner.springpractice.collinpetclinic.model.Vet;
 import shriner.springpractice.collinpetclinic.services.OwnerService;
+import shriner.springpractice.collinpetclinic.services.PetTypeService;
 import shriner.springpractice.collinpetclinic.services.VetService;
-import shriner.springpractice.collinpetclinic.services.map.OwnerServiceMap;
-import shriner.springpractice.collinpetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
+    private final PetTypeService petTypeService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
-
+        this.petTypeService = petTypeService;
     }
 
     @Override
     public void run(String... args) throws Exception {
+
+        PetType dog = new PetType();
+        dog.setName("Dog");
+        petTypeService.save(dog);
+
+        PetType cat = new PetType();
+        dog.setName("Cat");
+        petTypeService.save(cat);
+
         Owner owner1 = new Owner();
         owner1.setFirstName("Collin");
         owner1.setLastName("Shriner");
