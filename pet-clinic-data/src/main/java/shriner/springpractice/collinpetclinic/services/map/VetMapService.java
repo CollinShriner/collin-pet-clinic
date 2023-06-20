@@ -1,5 +1,6 @@
 package shriner.springpractice.collinpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import shriner.springpractice.collinpetclinic.model.Speciality;
 import shriner.springpractice.collinpetclinic.model.Vet;
@@ -9,6 +10,7 @@ import shriner.springpractice.collinpetclinic.services.VetService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
     private final SpecialityService specialityService;
 

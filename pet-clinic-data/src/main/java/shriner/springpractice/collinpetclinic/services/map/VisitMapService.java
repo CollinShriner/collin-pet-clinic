@@ -1,5 +1,6 @@
 package shriner.springpractice.collinpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import shriner.springpractice.collinpetclinic.model.Visit;
 import shriner.springpractice.collinpetclinic.services.VisitService;
@@ -7,6 +8,7 @@ import shriner.springpractice.collinpetclinic.services.VisitService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
 

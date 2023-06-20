@@ -1,5 +1,6 @@
 package shriner.springpractice.collinpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import shriner.springpractice.collinpetclinic.model.PetType;
 import shriner.springpractice.collinpetclinic.services.PetTypeService;
@@ -7,6 +8,7 @@ import shriner.springpractice.collinpetclinic.services.PetTypeService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService {
     @Override
     public Set<PetType> findAll() {
