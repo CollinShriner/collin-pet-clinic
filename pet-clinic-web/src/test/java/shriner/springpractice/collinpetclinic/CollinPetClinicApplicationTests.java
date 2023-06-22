@@ -8,6 +8,7 @@ class CollinPetClinicApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }
