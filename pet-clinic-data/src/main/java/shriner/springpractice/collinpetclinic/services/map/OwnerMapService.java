@@ -8,6 +8,7 @@ import shriner.springpractice.collinpetclinic.services.OwnerService;
 import shriner.springpractice.collinpetclinic.services.PetService;
 import shriner.springpractice.collinpetclinic.services.PetTypeService;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -79,5 +80,11 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
                 .filter(owner -> owner.getLastName().equals(lastName))
                 .findFirst()
                 .orElse(null);
+    }
+
+    @Override
+    public List<Owner> findAllByLastNameLike(String name)
+    {
+        return null;
     }
 }
